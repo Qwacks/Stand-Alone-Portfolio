@@ -6,12 +6,11 @@ YOUR STYLES
 
 /* Header */
 header, footer {
+    font-size: 6vw;
     display: flex;
     justify-content: center;
     font-family: 'Raleway', sans-serif;
-    font-size: 3 vw;
     color: white;
-    text-align: center;
     background: #242B2F;
 }
 
