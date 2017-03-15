@@ -132,5 +132,9 @@ img {
     width: 95%;
  }    
     
+    .name {
+        font-size: 2em;
+    }
+    
     
 }
