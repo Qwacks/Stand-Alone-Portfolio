@@ -2,37 +2,57 @@
 YOUR STYLES
 *******************/
 
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
 /* Header */
 header {
   display: flex;
   justify-content: center;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  text-align: center;
 }
+
+figcaption{
+    display: none;
+}
+
+/* Flexbox Styling */
+
 
 /* Gallery Styling */
 /* Just for Class*/
+
+/* #242B2F is gray */
+/* #7ca67a is green */
+
 figure img {
     width: 100px;
 }
 
 .gallery {
+    align-self: center;
     display: flex;
     flex-wrap: wrap;
 }
 
 figure {
-    background: yellow;
-    padding: 20px;
+    background: #7ca67a;
+    padding: 10px;
     width: 30%;
-    
     display: flex;
     flex-wrap: wrap;
+    flex-flow: column;
     justify-content: space-around;
+}
+
+.caption{
+    display: none;
 }
 
 
 .lg-backdrop {
-    background: magenta;
+    background: #242B2F;
 }
 
 .lg-image {
@@ -50,6 +70,20 @@ MEDIA QUERIES
 *******************/
 /* Mobile: 320px = 20em */
 @media screen and (min-width: 20em) { 
+    
+    figure {
+        width: 100%;
+    }
+    
+    img {
+        width: 100%
+        height: auto;
+    }
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
   /* Diagnostic Styling. */
   body {
